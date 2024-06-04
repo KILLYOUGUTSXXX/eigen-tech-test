@@ -1,0 +1,17 @@
+
+module.exports = {
+  dialect: 'postgres',
+  timezone: '+07:00',
+  dialectOptions: {
+    decimalNumbers: true,
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  },
+  host: process.env['AFX_PG_URL'],
+  port: parseInt(process.env['AFX_PG_PORT']),
+  username: process.env['AFX_PG_USER'],
+  password: process.env['AFX_PG_PSW'],
+  database: process.env['AFX_PG_DBNAME']
+}
