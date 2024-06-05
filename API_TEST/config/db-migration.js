@@ -3,11 +3,7 @@ module.exports = {
   dialect: 'postgres',
   timezone: '+07:00',
   dialectOptions: {
-    decimalNumbers: true,
-    ssl: {
-      require: true,
-      rejectUnauthorized: false
-    }
+    decimalNumbers: true
   },
   host: process.env['AFX_PG_URL'],
   port: parseInt(process.env['AFX_PG_PORT']),

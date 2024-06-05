@@ -4,7 +4,7 @@ services:
   app:
     image: afx-eigen-test/app
     container_name: afx-eigen-test
-    build: ./app
+    build: ./
     restart: always
     ports:
       - 4010:4010
@@ -12,17 +12,14 @@ services:
       connectors:
         ipv4_address: 183.77.86.10
     depends_on:
-      - db
-  db:
+      - db_pg
+  db_pg:
     container_name: pg-tech-test
     image: postgres
     environment:
       POSTGRES_DB: eigen_afx_dev
       POSTGRES_USER: aidil
       POSTGRES_PASSWORD: febrian98
-      PGDATA: /data/postgres
-    volumes:
-      - postgres:/data/postgres
     restart: always
     ports:
       - 8856:5432
