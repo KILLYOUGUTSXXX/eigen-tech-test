@@ -32,6 +32,11 @@
     npm run start:win-test
     ```
 
+#### Open Api Documentaion
+```bash
+http://localhost:4010/api-docs
+```
+
 ## Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=nodejs,nest,ts,js,jest)](https://skillicons.dev)
 
