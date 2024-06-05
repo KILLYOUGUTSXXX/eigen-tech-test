@@ -22,15 +22,11 @@
     ```bash
     npm run start:win-dev
     ```
-#### Test Mode (Jest)
-- Linux
-    ```bash
-    npm run start:test
-    ```
-- Windows
-    ```bash
-    npm run start:win-test
-    ```
+    
+#### Production Mode
+```bash
+docker compose up --build -d
+```
 
 #### Open Api Documentaion
 ```bash
